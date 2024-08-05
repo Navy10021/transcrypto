@@ -43,8 +43,8 @@ Train the model using your prepared dataset. The train function handles the trai
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 
-# Define your texts and preprocess them
-texts = ["hello world", "transformer model for encryption", "test text data"]
+# Defining text data for training transformer-based encryption models
+texts = ["hello world", "transformer model for encryption", "test text data", "1 1 1", "1 3 3 7"]
 data = tokenize_and_pad(texts, vocab, tokenizer, maxlen)
 
 # Create dataset and dataloader
@@ -64,7 +64,7 @@ train(model, train_loader, val_loader, epochs=50, device=device)
 Test the encryption and decryption capabilities of the trained model on new text data.
 ```python
 # Test texts
-test_texts = ["hello world", "new test text"]
+test_texts = ["hello world", "new test text", "1 3 3 7"]
 test_data = tokenize_and_pad(test_texts, vocab, tokenizer, maxlen).to(device)
 
 # Encrypt and decrypt the data
