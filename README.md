@@ -68,11 +68,11 @@ decrypted_texts = tensor_to_text(decrypted_data.argmax(dim=-1), vocab)
 print("Decrypted Texts:", decrypted_texts)
 ```
 
-### 4. Output(Encrypt & Decrypt)
-When you run main.py, you can perform the entire steps described above and check the encrypted and decrypted results. For reference, main_0.py is code that executes basic Transformer-based encryption without RSA applied.
+### 4. Running the Scripts
+When you run main_0.py, it executes the basic Transformer-based encryption and decryption without RSA. Running main.py performs enhanced encryption and decryption using both the Transformer model and RSA encryption.
    ```bash
    python main.py
-   #python main_0.py
+   python main_0.py
    ```
 
 ## 📦 Model Architecture
