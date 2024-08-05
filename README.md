@@ -16,7 +16,7 @@ This project implements a Transformer-based neural network model integrated with
 ## 🚀 Installation
 ### Clone the repository
    ```bash
-   git clone https://github.com/yourusername/transcrypto.git
+   git clone https://github.com/Navy10021/transcrypto.git
    cd transcrypto
    ```
 
