@@ -77,8 +77,10 @@ with torch.no_grad():
 
 # Convert decrypted data back to text
 decrypted_texts = tensor_to_text(decrypted_data.argmax(dim=-1), vocab)
-print("Encrypted Data:", encrypted_data, end = "\n")
-print("Decrypted Texts:", decrypted_texts, end = "\n")
+
+print(">> Encrypted Data:", encrypted_data, end = "\n")
+print(">> Enhanced Encrypted Data:", encrypted_rsa_data, end = "\n")
+print(">> Decrypted Texts:", decrypted_texts, end = "\n")
 ```
 
 ### 4. Running the Scripts
