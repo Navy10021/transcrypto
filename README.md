@@ -1,6 +1,7 @@
 <div align="center">
 
-# 🔐TransCrypto🔐: Transformer-based Encryption with RSA
+# 🔐TransCrypto🔐: 
+# Transformer-based Encryption with RSA
 </div>
 
 ## 📑 Project Overview
