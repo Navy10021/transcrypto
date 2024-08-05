@@ -2,7 +2,7 @@
 
 ![TransCrypto Logo](https://yourimageurl.com/logo.png)
 
-TransCrypto is a PyTorch implementation of a Transformer-based model designed for cryptography tasks. This project includes implementations of the Transformer encoder and decoder, along with a custom training loop incorporating early stopping and learning rate scheduling.
+TransCrypto is ~.
 
 ## 🚀Installation
 1. **Clone the repository:**
