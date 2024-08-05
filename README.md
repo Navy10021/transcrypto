@@ -2,27 +2,15 @@
 
 ![TransCrypto Logo](https://yourimageurl.com/logo.png)
 
-TransCrypto is a PyTorch implementation of a Transformer-based model designed for cryptography tasks. This project includes implementations of both the Transformer encoder and decoder, along with a custom training loop that incorporates early stopping and learning rate scheduling.
+TransCrypto is a PyTorch implementation of a Transformer-based model designed for cryptography tasks. This project includes implementations of the Transformer encoder and decoder, along with a custom training loop incorporating early stopping and learning rate scheduling.
 
-## Features
-- 🚀 Transformer Encoder and Decoder
-- 🛠️ Custom Training Loop with Early Stopping
-- 📉 Learning Rate Scheduler
-- ✂️ Tokenization and Padding of Input Texts
-
-## Requirements
-- Python 3.6+
-- PyTorch
-- torchtext
-- numpy
-
-## Installation
+## 🚀Installation
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/transcrypto.git
    cd transcrypto
    ```
-## Usage
+## 🛠️Usage
 
 ### Example Usage
 Here's a step-by-step guide to using TransCrypto with sample data:
@@ -64,7 +52,7 @@ Here's a step-by-step guide to using TransCrypto with sample data:
    model = TransCrypto(input_dim, embed_dim, num_heads, ff_dim, num_layers, maxlen).to(device)
    train(model, train_loader, val_loader, epochs, device)
    ```
-## Code Overview
+## 📉Code Overview
 
 ### Model Architecture
 The TransCrypto model consists of a Transformer encoder and decoder. Here are the key components:
@@ -95,3 +83,5 @@ The `tokenize_and_pad` function processes input texts by:
   
 - **Padding**: Pads the token sequences to a specified maximum length to ensure uniform input dimensions for batch processing.
 
+## ✂️License
+This project is licensed under the MIT License - see the LICENSE file for details.
