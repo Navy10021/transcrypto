@@ -28,9 +28,6 @@ Define your text data and prepare it using the provided functions. Ensure that y
 ### 2. Training the Model
 Train the model using your prepared dataset. The train function handles the training process, including early stopping and learning rate scheduling.
 ```python
-from torch.utils.data import DataLoader, TensorDataset
-import torch
-
 # Define your texts and preprocess them
 texts = ["hello world", "transformer model for encryption", "test text data"]
 data = tokenize_and_pad(texts, vocab, tokenizer, maxlen)
