@@ -64,7 +64,7 @@ train(model, train_loader, val_loader, epochs=50, device=device)
 Test the encryption and decryption capabilities of the trained model on new text data.
 ```python
 # Test texts
-test_texts = ["hello world", "new test text", "1 3 3 7"]
+test_texts = ["hello world", "new test text", "1 1 2", "1 3 3 7"]
 test_data = tokenize_and_pad(test_texts, vocab, tokenizer, maxlen).to(device)
 
 # Encrypt and decrypt the data
