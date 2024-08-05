@@ -4,7 +4,7 @@
 </div>
 
 ## 📑 Project Overview
-This project implements a Transformer-based neural network model integrated with RSA encryption for secure text data handling. The model encrypts text data using a Transformer network and further secures it with RSA encryption.
+This project implements a ***Transformer-based neural network model*** integrated with ***RSA encryption*** for secure text data handling. The model encrypts text data using a Transformer network and further secures it with RSA encryption.
 
 ## 📋 Features
 
