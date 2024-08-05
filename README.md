@@ -7,6 +7,15 @@
 
 **TransCrypto** is a project that integrates ***Transformer-based neural network models*** with ***RSA encryption*** to ensure secure text data processing. This model encrypts text data using a Transformer network and adds an extra layer of security through RSA encryption.
 
+## 🤖 What is a Transformer Model?
+
+A **Transformer model** is a type of deep learning model introduced in the paper ["Attention is All You Need"](https://arxiv.org/abs/1706.03762). It is widely used in natural language processing(NLP) tasks due to its ability to handle long-range dependencies and parallelize training. Transformers use self-attention mechanisms to weigh the importance of different parts of the input data dynamically.
+
+## 🔐 What is RSA Encryption?
+
+**RSA (Rivest–Shamir–Adleman) encryption** is a public-key cryptosystem that is widely used for secure data transmission. It involves two keys: a public key, which can be distributed widely, and a private key, which is kept secret. RSA is based on the mathematical difficulty of factoring the product of two large prime numbers.
+
+
 ## 📋 Features
 
 - **Transformer-based Encryption**: Uses Transformer neural networks for encoding and decoding text data.
@@ -15,7 +24,9 @@
 - **Tokenization and Padding**: Tokenizes and pads text data for model input.
 
 ## 🚀 Installation
+
 ### Clone the repository
+
    ```bash
    git clone https://github.com/Navy10021/transcrypto.git
    cd transcrypto
@@ -29,6 +40,9 @@ Define your text data and prepare it using the provided functions. Ensure that y
 ### 2. Training the Model
 Train the model using your prepared dataset. The train function handles the training process, including early stopping and learning rate scheduling.
 ```python
+import torch
+from torch.utils.data import DataLoader, TensorDataset
+
 # Define your texts and preprocess them
 texts = ["hello world", "transformer model for encryption", "test text data"]
 data = tokenize_and_pad(texts, vocab, tokenizer, maxlen)
@@ -63,11 +77,12 @@ with torch.no_grad():
 
 # Convert decrypted data back to text
 decrypted_texts = tensor_to_text(decrypted_data.argmax(dim=-1), vocab)
-print("Decrypted Texts:", decrypted_texts)
+print("Encrypted Data:", encrypted_data, end = "\n")
+print("Decrypted Texts:", decrypted_texts, end = "\n")
 ```
 
 ### 4. Running the Scripts
-When you run **main_0.py**, it executes the basic Transformer-based encryption and decryption without RSA. Running **main.py** performs enhanced encryption and decryption using the Transformer-based neural network model integrated with RSA encryption.
+When you run main_0.py, it executes the basic Transformer-based encryption and decryption without RSA. Running main.py performs enhanced encryption and decryption using the Transformer-based neural network model integrated with RSA encryption.
    ```bash
    python main.py
    python main_0.py
