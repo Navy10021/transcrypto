@@ -69,7 +69,7 @@ print("Decrypted Texts:", decrypted_texts)
 ```
 
 ### 4. Running the Scripts
-When you run main_0.py, it executes the basic Transformer-based encryption and decryption without RSA. Running main.py performs enhanced encryption and decryption using both the Transformer model and RSA encryption.
+When you run **main_0.py**, it executes the basic Transformer-based encryption and decryption without RSA. Running **main.py** performs enhanced encryption and decryption using the Transformer-based neural network model integrated with RSA encryption.
    ```bash
    python main.py
    python main_0.py
