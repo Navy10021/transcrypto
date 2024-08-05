@@ -68,6 +68,13 @@ decrypted_texts = tensor_to_text(decrypted_data.argmax(dim=-1), vocab)
 print("Decrypted Texts:", decrypted_texts)
 ```
 
+### 4. Output(Encrypt & Decrypt)
+When you run main.py, you can perform the entire steps described above and check the encrypted and decrypted results. For reference, main_0.py is code that executes basic Transformer-based encryption without RSA applied.
+   ```bash
+   python main.py
+   #python main_0.py
+   ```
+
 ## 📦 Model Architecture
 - **Embedding Layer**: Converts input tokens into dense vectors.
 - **Transformer Encoders**: Multiple layers of Transformer encoders for capturing long-range dependencies.
