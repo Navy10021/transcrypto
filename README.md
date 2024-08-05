@@ -1,4 +1,4 @@
-# TransCrypto: A Transformer-based Cryptography Model
+# ✨TransCrypto✨: A Transformer-based Cryptography Model
 
 ![TransCrypto Logo](https://yourimageurl.com/logo.png)
 
