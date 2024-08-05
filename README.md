@@ -1,7 +1,10 @@
+<div align="center">
+
 # 🔐TransCrypto🔐: Transformer-based Encryption with RSA
+</div>
 
 ![TransCrypto Logo](https://yourimageurl.com/logo.png)
-
+## 📑 Project Overview
 This project implements a Transformer-based neural network model integrated with RSA encryption for secure text data handling. The model encrypts text data using a Transformer network and further secures it with RSA encryption.
 
 ## Features
