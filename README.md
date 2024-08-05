@@ -6,14 +6,14 @@
 ## 📑 Project Overview
 This project implements a Transformer-based neural network model integrated with RSA encryption for secure text data handling. The model encrypts text data using a Transformer network and further secures it with RSA encryption.
 
-## Features
+## 📋 Features
 
 - **Transformer-based Encryption**: Utilizes a Transformer neural network for encoding and decoding text data.
 - **RSA Encryption**: Adds an additional layer of security using RSA encryption.
 - **Training and Evaluation**: Includes functionality for training and evaluating the model on custom datasets.
 - **Tokenization and Padding**: Prepares text data using tokenization and padding for input into the model.
 
-## 🚀Installation
+## 🚀 Installation
 ### Clone the repository
    ```bash
    git clone https://github.com/yourusername/transcrypto.git
@@ -68,12 +68,16 @@ decrypted_texts = tensor_to_text(decrypted_data.argmax(dim=-1), vocab)
 print("Decrypted Texts:", decrypted_texts)
 ```
 
-## Model Architecture
+## 📦 Model Architecture
 - **Embedding Layer**: Converts input tokens into dense vectors.
 - **Transformer Encoders**: Multiple layers of Transformer encoders for capturing long-range dependencies.
 - **Transformer Decoders**: Multiple layers of Transformer decoders for generating output sequences.
 - **RSA Encryption**: RSA public and private keys for encrypting and decrypting model outputs.
 
+  
+## 👨‍💻 Contributors
+- **Seoul National University Graduate School of Data Science (SNU GSDS)**
+- Under the guidance of ***Navy Lee***
 
-## ✂️License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
