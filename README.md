@@ -67,10 +67,10 @@ print("Decrypted Texts:", decrypted_texts)
 ```
 
 ## Model Architecture
-**Embedding Layer**: Converts input tokens into dense vectors.
-**Transformer Encoders**: Multiple layers of Transformer encoders for capturing long-range dependencies.
-**Transformer Decoders**: Multiple layers of Transformer decoders for generating output sequences.
-**RSA Encryption**: RSA public and private keys for encrypting and decrypting model outputs.
+- **Embedding Layer**: Converts input tokens into dense vectors.
+- **Transformer Encoders**: Multiple layers of Transformer encoders for capturing long-range dependencies.
+- **Transformer Decoders**: Multiple layers of Transformer decoders for generating output sequences.
+- **RSA Encryption**: RSA public and private keys for encrypting and decrypting model outputs.
 
 
 ## ✂️License
