@@ -11,7 +11,7 @@ if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # Define some sample text data
-    texts = ["hello world", "transformer model for encryption", "test text data"]
+    texts = ["hello world", "transformer model for encryption", "test text data", "1 1 1", "1 3 3 7"]
 
     # Build the vocabulary and tokenizer
     tokenizer = get_tokenizer('basic_english')
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     transformer_crypto_rsa.load_state_dict(torch.load('best_model.pth'))
 
     # Test the encryption and decryption
-    test_texts = ["hello world", "new test text"]
+    test_texts = ["hello world", "new test text", "1 1 2", "1 3 3 7"]
     test_data = tokenize_and_pad(test_texts, vocab, tokenizer, maxlen).to(device)
     transformer_crypto_rsa.eval()
     with torch.no_grad():
