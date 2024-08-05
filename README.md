@@ -35,17 +35,15 @@ Here's a step-by-step guide to using TransCrypto with sample data:
    ```python
    from torchtext.data.utils import get_tokenizer
 from torchtext.vocab import build_vocab_from_iterator
-
+   ```
 tokenizer = get_tokenizer("basic_english")
 vocab = build_vocab_from_iterator(map(tokenizer, texts), specials=["<pad>"])
 vocab.set_default_index(vocab["<pad>"])
-
    ```
 3. **Tokenize and Pad Texts:**
    ```python
    maxlen = 10  # Define maximum length for padding
 padded_tokens = tokenize_and_pad(texts, vocab, tokenizer, maxlen)
-
    ```
 4. **Create DataLoader:**
    ```python
@@ -54,7 +52,6 @@ padded_tokens = tokenize_and_pad(texts, vocab, tokenizer, maxlen)
 dataset = TensorDataset(padded_tokens)
 train_loader = DataLoader(dataset, batch_size=2, shuffle=True)
 val_loader = DataLoader(dataset, batch_size=2)
-
    ```
 6. **Initialize and Train the Model:**
    ```python
@@ -68,5 +65,4 @@ epochs = 20
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = TransCrypto(input_dim, embed_dim, num_heads, ff_dim, num_layers, maxlen).to(device)
 train(model, train_loader, val_loader, epochs, device)
-
    ```
