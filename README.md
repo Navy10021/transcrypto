@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐TransCrypto: Transformer-based Encryption with RSA
+# 🔐 TransCrypto: Transformer-based Encryption with RSA
 </div>
 
 ## 📑 Project Overview
@@ -20,7 +20,7 @@ This project implements a Transformer-based neural network model integrated with
    cd transcrypto
    ```
 
-## 🛠️Usage
+## 🛠️ Usage
 ### 1. Preparing the Data
 
 Define your text data and prepare it using the provided functions. Ensure that your texts are tokenized and padded appropriately.
