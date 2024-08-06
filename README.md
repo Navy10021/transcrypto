@@ -102,4 +102,4 @@ When you run main_0.py, it executes the basic Transformer-based encryption and d
 - Under the guidance of ***Navy Lee***
 
 ## 📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
